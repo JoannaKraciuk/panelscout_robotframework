@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.2 on win32)" generated="20230726 14:05:28.894" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.2 on win32)" generated="20230726 14:23:46.269" rpa="false" schemaversion="4">
 <suite id="s1" name="Test Login Rf" source="C:\Users\valcr\OneDrive\Dokumenty\GitHub\panelscout_robotframework\test_login_rf.robot">
 <test id="s1-t1" name="Login to the system" line="40">
 <kw name="Open login page">
@@ -7,71 +7,71 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:05:29.119" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
-<status status="PASS" starttime="20230726 14:05:29.119" endtime="20230726 14:05:30.989"/>
+<msg timestamp="20230726 14:23:46.500" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 14:23:46.500" endtime="20230726 14:23:48.239"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel - sign in</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:30.997" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
-<status status="PASS" starttime="20230726 14:05:30.989" endtime="20230726 14:05:30.997"/>
+<msg timestamp="20230726 14:23:48.248" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 14:23:48.239" endtime="20230726 14:23:48.248"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:29.119" endtime="20230726 14:05:30.997"/>
+<status status="PASS" starttime="20230726 14:23:46.500" endtime="20230726 14:23:48.248"/>
 </kw>
 <kw name="Type in email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILINPUT}</arg>
 <arg>user10@getnada.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:30.997" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
-<status status="PASS" starttime="20230726 14:05:30.997" endtime="20230726 14:05:31.234"/>
+<msg timestamp="20230726 14:23:48.248" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230726 14:23:48.248" endtime="20230726 14:23:48.525"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:30.997" endtime="20230726 14:05:31.234"/>
+<status status="PASS" starttime="20230726 14:23:48.248" endtime="20230726 14:23:48.525"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDINPUT}</arg>
 <arg>Test-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:31.237" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
-<status status="PASS" starttime="20230726 14:05:31.235" endtime="20230726 14:05:31.372"/>
+<msg timestamp="20230726 14:23:48.526" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230726 14:23:48.526" endtime="20230726 14:23:48.643"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:31.235" endtime="20230726 14:05:31.372"/>
+<status status="PASS" starttime="20230726 14:23:48.526" endtime="20230726 14:23:48.643"/>
 </kw>
 <kw name="Click on the Submit button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:31.372" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
-<status status="PASS" starttime="20230726 14:05:31.372" endtime="20230726 14:05:31.421"/>
+<msg timestamp="20230726 14:23:48.643" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
+<status status="PASS" starttime="20230726 14:23:48.643" endtime="20230726 14:23:48.701"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:31.372" endtime="20230726 14:05:31.421"/>
+<status status="PASS" starttime="20230726 14:23:48.643" endtime="20230726 14:23:48.701"/>
 </kw>
 <kw name="Assert dashboard">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGELOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:31.421" endtime="20230726 14:05:32.757"/>
+<status status="PASS" starttime="20230726 14:23:48.701" endtime="20230726 14:23:51.082"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:32.765" level="INFO">Page title is 'Scouts panel'.</msg>
-<status status="PASS" starttime="20230726 14:05:32.757" endtime="20230726 14:05:32.765"/>
+<msg timestamp="20230726 14:23:51.082" level="INFO">Page title is 'Scouts panel'.</msg>
+<status status="PASS" starttime="20230726 14:23:51.082" endtime="20230726 14:23:51.082"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:05:32.903" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:05:32.765" endtime="20230726 14:05:32.903"/>
+<msg timestamp="20230726 14:23:51.243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:23:51.090" endtime="20230726 14:23:51.243"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:31.421" endtime="20230726 14:05:32.903"/>
+<status status="PASS" starttime="20230726 14:23:48.701" endtime="20230726 14:23:51.243"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:05:32.903" endtime="20230726 14:05:35.038"/>
+<status status="PASS" starttime="20230726 14:23:51.243" endtime="20230726 14:23:53.409"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:29.119" endtime="20230726 14:05:35.038"/>
+<status status="PASS" starttime="20230726 14:23:46.500" endtime="20230726 14:23:53.409"/>
 </test>
 <test id="s1-t2" name="Log out of the system" line="48">
 <kw name="Open login page">
@@ -79,567 +79,619 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:05:35.038" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
-<status status="PASS" starttime="20230726 14:05:35.038" endtime="20230726 14:05:36.675"/>
+<msg timestamp="20230726 14:23:53.409" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 14:23:53.409" endtime="20230726 14:23:55.395"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel - sign in</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:36.691" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
-<status status="PASS" starttime="20230726 14:05:36.675" endtime="20230726 14:05:36.691"/>
+<msg timestamp="20230726 14:23:55.404" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 14:23:55.396" endtime="20230726 14:23:55.404"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:35.038" endtime="20230726 14:05:36.691"/>
+<status status="PASS" starttime="20230726 14:23:53.409" endtime="20230726 14:23:55.404"/>
 </kw>
 <kw name="Type in email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILINPUT}</arg>
 <arg>user10@getnada.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:36.691" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
-<status status="PASS" starttime="20230726 14:05:36.691" endtime="20230726 14:05:36.976"/>
+<msg timestamp="20230726 14:23:55.407" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230726 14:23:55.405" endtime="20230726 14:23:55.658"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:36.691" endtime="20230726 14:05:36.976"/>
+<status status="PASS" starttime="20230726 14:23:55.405" endtime="20230726 14:23:55.658"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDINPUT}</arg>
 <arg>Test-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:36.977" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
-<status status="PASS" starttime="20230726 14:05:36.977" endtime="20230726 14:05:37.125"/>
+<msg timestamp="20230726 14:23:55.658" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230726 14:23:55.658" endtime="20230726 14:23:55.779"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:36.977" endtime="20230726 14:05:37.125"/>
+<status status="PASS" starttime="20230726 14:23:55.658" endtime="20230726 14:23:55.779"/>
 </kw>
 <kw name="Click on the Submit button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:37.126" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
-<status status="PASS" starttime="20230726 14:05:37.126" endtime="20230726 14:05:37.171"/>
+<msg timestamp="20230726 14:23:55.779" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
+<status status="PASS" starttime="20230726 14:23:55.779" endtime="20230726 14:23:55.836"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:37.126" endtime="20230726 14:05:37.171"/>
+<status status="PASS" starttime="20230726 14:23:55.779" endtime="20230726 14:23:55.836"/>
 </kw>
 <kw name="Assert dashboard">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGELOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:37.171" endtime="20230726 14:05:38.880"/>
+<status status="PASS" starttime="20230726 14:23:55.836" endtime="20230726 14:23:59.706"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:38.891" level="INFO">Page title is 'Scouts panel'.</msg>
-<status status="PASS" starttime="20230726 14:05:38.880" endtime="20230726 14:05:38.891"/>
+<msg timestamp="20230726 14:23:59.715" level="INFO">Page title is 'Scouts panel'.</msg>
+<status status="PASS" starttime="20230726 14:23:59.706" endtime="20230726 14:23:59.715"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:05:39.038" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:05:38.891" endtime="20230726 14:05:39.038"/>
+<msg timestamp="20230726 14:23:59.885" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:23:59.715" endtime="20230726 14:23:59.885"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:37.171" endtime="20230726 14:05:39.038"/>
+<status status="PASS" starttime="20230726 14:23:55.836" endtime="20230726 14:23:59.885"/>
 </kw>
 <kw name="Click on the Logout Button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LOGOUTBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:39.038" level="INFO">Clicking element 'xpath=//div[@role='presentation']/ul[2]/div[2]/div[2]/span[1]'.</msg>
-<status status="PASS" starttime="20230726 14:05:39.038" endtime="20230726 14:05:39.110"/>
+<msg timestamp="20230726 14:23:59.885" level="INFO">Clicking element 'xpath=//div[@role='presentation']/ul[2]/div[2]/div[2]/span[1]'.</msg>
+<status status="PASS" starttime="20230726 14:23:59.885" endtime="20230726 14:23:59.959"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:39.038" endtime="20230726 14:05:39.110"/>
+<status status="PASS" starttime="20230726 14:23:59.885" endtime="20230726 14:23:59.959"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:05:39.110" endtime="20230726 14:05:41.233"/>
+<status status="PASS" starttime="20230726 14:23:59.959" endtime="20230726 14:24:02.143"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:35.038" endtime="20230726 14:05:41.233"/>
+<status status="PASS" starttime="20230726 14:23:53.409" endtime="20230726 14:24:02.143"/>
 </test>
-<test id="s1-t3" name="Add player page" line="57">
+<test id="s1-t3" name="Login to the system with invalid data" line="57">
 <kw name="Open login page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:05:41.233" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
-<status status="PASS" starttime="20230726 14:05:41.233" endtime="20230726 14:05:45.011"/>
+<msg timestamp="20230726 14:24:02.143" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 14:24:02.143" endtime="20230726 14:24:03.725"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel - sign in</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:45.019" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
-<status status="PASS" starttime="20230726 14:05:45.011" endtime="20230726 14:05:45.019"/>
+<msg timestamp="20230726 14:24:03.733" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 14:24:03.725" endtime="20230726 14:24:03.733"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:41.233" endtime="20230726 14:05:45.019"/>
+<status status="PASS" starttime="20230726 14:24:02.143" endtime="20230726 14:24:03.733"/>
 </kw>
-<kw name="Type in email">
+<kw name="Type in invalid email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILINPUT}</arg>
-<arg>user10@getnada.com</arg>
+<arg>user10@getnada.co</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:45.019" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
-<status status="PASS" starttime="20230726 14:05:45.019" endtime="20230726 14:05:45.211"/>
+<msg timestamp="20230726 14:24:03.733" level="INFO">Typing text 'user10@getnada.co' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230726 14:24:03.733" endtime="20230726 14:24:03.930"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:45.019" endtime="20230726 14:05:45.211"/>
+<status status="PASS" starttime="20230726 14:24:03.733" endtime="20230726 14:24:03.930"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDINPUT}</arg>
 <arg>Test-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:45.219" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
-<status status="PASS" starttime="20230726 14:05:45.219" endtime="20230726 14:05:45.347"/>
+<msg timestamp="20230726 14:24:03.930" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230726 14:24:03.930" endtime="20230726 14:24:04.087"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:45.211" endtime="20230726 14:05:45.347"/>
+<status status="PASS" starttime="20230726 14:24:03.930" endtime="20230726 14:24:04.087"/>
 </kw>
 <kw name="Click on the Submit button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:45.347" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
-<status status="PASS" starttime="20230726 14:05:45.347" endtime="20230726 14:05:45.403"/>
+<msg timestamp="20230726 14:24:04.088" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
+<status status="PASS" starttime="20230726 14:24:04.088" endtime="20230726 14:24:04.148"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:45.347" endtime="20230726 14:05:45.403"/>
-</kw>
-<kw name="Assert dashboard">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${PAGELOGO}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:45.403" endtime="20230726 14:05:48.799"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Scouts panel</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:48.799" level="INFO">Page title is 'Scouts panel'.</msg>
-<status status="PASS" starttime="20230726 14:05:48.799" endtime="20230726 14:05:48.799"/>
-</kw>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<arg>alert.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:05:48.945" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:05:48.799" endtime="20230726 14:05:48.945"/>
-</kw>
-<status status="PASS" starttime="20230726 14:05:45.403" endtime="20230726 14:05:48.945"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${ADDPLAYERBUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:48.945" level="INFO">Clicking element 'xpath=//main/div[3]/div[2]/div[1]/div[1]/a/button'.</msg>
-<status status="PASS" starttime="20230726 14:05:48.945" endtime="20230726 14:05:49.002"/>
-</kw>
-<kw name="Assert player page">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${ADDPLAYERPAGELOGO}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:49.010" endtime="20230726 14:05:49.116"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Add player</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:49.132" level="INFO">Page title is 'Add player'.</msg>
-<status status="PASS" starttime="20230726 14:05:49.116" endtime="20230726 14:05:49.132"/>
-</kw>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<arg>alert.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:05:49.236" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:05:49.132" endtime="20230726 14:05:49.236"/>
-</kw>
-<status status="PASS" starttime="20230726 14:05:49.010" endtime="20230726 14:05:49.236"/>
+<status status="PASS" starttime="20230726 14:24:04.088" endtime="20230726 14:24:04.148"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:05:49.244" endtime="20230726 14:05:51.389"/>
+<status status="PASS" starttime="20230726 14:24:04.148" endtime="20230726 14:24:06.274"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:41.233" endtime="20230726 14:05:51.389"/>
+<status status="PASS" starttime="20230726 14:24:02.143" endtime="20230726 14:24:06.274"/>
 </test>
-<test id="s1-t4" name="Add player form" line="67">
+<test id="s1-t4" name="Add player page" line="65">
 <kw name="Open login page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:05:51.389" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
-<status status="PASS" starttime="20230726 14:05:51.389" endtime="20230726 14:05:53.299"/>
+<msg timestamp="20230726 14:24:06.274" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 14:24:06.274" endtime="20230726 14:24:07.849"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel - sign in</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:53.307" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
-<status status="PASS" starttime="20230726 14:05:53.299" endtime="20230726 14:05:53.307"/>
+<msg timestamp="20230726 14:24:07.857" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 14:24:07.849" endtime="20230726 14:24:07.857"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:51.389" endtime="20230726 14:05:53.307"/>
+<status status="PASS" starttime="20230726 14:24:06.274" endtime="20230726 14:24:07.857"/>
 </kw>
 <kw name="Type in email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILINPUT}</arg>
 <arg>user10@getnada.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:53.309" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
-<status status="PASS" starttime="20230726 14:05:53.308" endtime="20230726 14:05:53.524"/>
+<msg timestamp="20230726 14:24:07.865" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230726 14:24:07.864" endtime="20230726 14:24:08.074"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:53.308" endtime="20230726 14:05:53.524"/>
+<status status="PASS" starttime="20230726 14:24:07.864" endtime="20230726 14:24:08.074"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDINPUT}</arg>
 <arg>Test-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:53.524" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
-<status status="PASS" starttime="20230726 14:05:53.524" endtime="20230726 14:05:53.652"/>
+<msg timestamp="20230726 14:24:08.074" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230726 14:24:08.074" endtime="20230726 14:24:08.228"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:53.524" endtime="20230726 14:05:53.652"/>
+<status status="PASS" starttime="20230726 14:24:08.074" endtime="20230726 14:24:08.228"/>
 </kw>
 <kw name="Click on the Submit button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:53.652" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
-<status status="PASS" starttime="20230726 14:05:53.652" endtime="20230726 14:05:53.717"/>
+<msg timestamp="20230726 14:24:08.230" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
+<status status="PASS" starttime="20230726 14:24:08.229" endtime="20230726 14:24:08.293"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:53.652" endtime="20230726 14:05:53.717"/>
+<status status="PASS" starttime="20230726 14:24:08.229" endtime="20230726 14:24:08.293"/>
 </kw>
 <kw name="Assert dashboard">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGELOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:53.717" endtime="20230726 14:05:55.007"/>
+<status status="PASS" starttime="20230726 14:24:08.293" endtime="20230726 14:24:09.582"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:55.015" level="INFO">Page title is 'Scouts panel'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.007" endtime="20230726 14:05:55.015"/>
+<msg timestamp="20230726 14:24:09.590" level="INFO">Page title is 'Scouts panel'.</msg>
+<status status="PASS" starttime="20230726 14:24:09.582" endtime="20230726 14:24:09.590"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:05:55.129" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:05:55.015" endtime="20230726 14:05:55.129"/>
+<msg timestamp="20230726 14:24:09.710" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:24:09.590" endtime="20230726 14:24:09.710"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:53.717" endtime="20230726 14:05:55.129"/>
+<status status="PASS" starttime="20230726 14:24:08.293" endtime="20230726 14:24:09.710"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ADDPLAYERBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:55.137" level="INFO">Clicking element 'xpath=//main/div[3]/div[2]/div[1]/div[1]/a/button'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.129" endtime="20230726 14:05:55.193"/>
+<msg timestamp="20230726 14:24:09.710" level="INFO">Clicking element 'xpath=//main/div[3]/div[2]/div[1]/div[1]/a/button'.</msg>
+<status status="PASS" starttime="20230726 14:24:09.710" endtime="20230726 14:24:09.770"/>
 </kw>
 <kw name="Assert player page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ADDPLAYERPAGELOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:55.193" endtime="20230726 14:05:55.291"/>
+<status status="PASS" starttime="20230726 14:24:09.770" endtime="20230726 14:24:09.862"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Add player</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:05:55.299" level="INFO">Page title is 'Add player'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.291" endtime="20230726 14:05:55.299"/>
+<msg timestamp="20230726 14:24:09.870" level="INFO">Page title is 'Add player'.</msg>
+<status status="PASS" starttime="20230726 14:24:09.862" endtime="20230726 14:24:09.870"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:05:55.420" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:05:55.299" endtime="20230726 14:05:55.420"/>
+<msg timestamp="20230726 14:24:09.982" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:24:09.870" endtime="20230726 14:24:09.982"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:55.193" endtime="20230726 14:05:55.420"/>
+<status status="PASS" starttime="20230726 14:24:09.770" endtime="20230726 14:24:09.982"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230726 14:24:09.982" endtime="20230726 14:24:12.122"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:06.274" endtime="20230726 14:24:12.122"/>
+</test>
+<test id="s1-t5" name="Add player form" line="75">
+<kw name="Open login page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230726 14:24:12.122" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 14:24:12.122" endtime="20230726 14:24:13.916"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - sign in</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230726 14:24:13.924" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 14:24:13.916" endtime="20230726 14:24:13.924"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:12.122" endtime="20230726 14:24:13.924"/>
+</kw>
+<kw name="Type in email">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILINPUT}</arg>
+<arg>user10@getnada.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230726 14:24:13.924" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230726 14:24:13.924" endtime="20230726 14:24:14.232"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:13.924" endtime="20230726 14:24:14.232"/>
+</kw>
+<kw name="Type in password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORDINPUT}</arg>
+<arg>Test-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230726 14:24:14.232" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230726 14:24:14.232" endtime="20230726 14:24:14.403"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:14.232" endtime="20230726 14:24:14.403"/>
+</kw>
+<kw name="Click on the Submit button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNINBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230726 14:24:14.403" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
+<status status="PASS" starttime="20230726 14:24:14.403" endtime="20230726 14:24:14.468"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:14.403" endtime="20230726 14:24:14.468"/>
+</kw>
+<kw name="Assert dashboard">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PAGELOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230726 14:24:14.468" endtime="20230726 14:24:17.228"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230726 14:24:17.228" level="INFO">Page title is 'Scouts panel'.</msg>
+<status status="PASS" starttime="20230726 14:24:17.228" endtime="20230726 14:24:17.228"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>alert.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230726 14:24:17.348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:24:17.228" endtime="20230726 14:24:17.348"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:14.468" endtime="20230726 14:24:17.348"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ADDPLAYERBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230726 14:24:17.348" level="INFO">Clicking element 'xpath=//main/div[3]/div[2]/div[1]/div[1]/a/button'.</msg>
+<status status="PASS" starttime="20230726 14:24:17.348" endtime="20230726 14:24:17.405"/>
+</kw>
+<kw name="Assert player page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ADDPLAYERPAGELOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230726 14:24:17.413" endtime="20230726 14:24:17.533"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Add player</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230726 14:24:17.541" level="INFO">Page title is 'Add player'.</msg>
+<status status="PASS" starttime="20230726 14:24:17.533" endtime="20230726 14:24:17.541"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>alert.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230726 14:24:17.677" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:24:17.541" endtime="20230726 14:24:17.677"/>
+</kw>
+<status status="PASS" starttime="20230726 14:24:17.413" endtime="20230726 14:24:17.677"/>
 </kw>
 <kw name="Type in Player Email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PLAYEREMAIL}</arg>
 <arg>smith@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:55.420" level="INFO">Typing text 'smith@gmail.com' into text field 'xpath=//*[@name='email']'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.420" endtime="20230726 14:05:55.575"/>
+<msg timestamp="20230726 14:24:17.677" level="INFO">Typing text 'smith@gmail.com' into text field 'xpath=//*[@name='email']'.</msg>
+<status status="PASS" starttime="20230726 14:24:17.677" endtime="20230726 14:24:17.829"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:55.420" endtime="20230726 14:05:55.575"/>
+<status status="PASS" starttime="20230726 14:24:17.677" endtime="20230726 14:24:17.829"/>
 </kw>
 <kw name="Type in Player Name">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PLAYERNAME}</arg>
 <arg>Kevin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:55.575" level="INFO">Typing text 'Kevin' into text field 'xpath=//*[@name='name']'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.575" endtime="20230726 14:05:55.689"/>
+<msg timestamp="20230726 14:24:17.829" level="INFO">Typing text 'Kevin' into text field 'xpath=//*[@name='name']'.</msg>
+<status status="PASS" starttime="20230726 14:24:17.829" endtime="20230726 14:24:17.958"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:55.575" endtime="20230726 14:05:55.689"/>
+<status status="PASS" starttime="20230726 14:24:17.829" endtime="20230726 14:24:17.958"/>
 </kw>
 <kw name="Type in Player Surname">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PLAYERSURNAME}</arg>
 <arg>Smith</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:55.689" level="INFO">Typing text 'Smith' into text field 'xpath=//*[@name='surname']'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.689" endtime="20230726 14:05:55.818"/>
+<msg timestamp="20230726 14:24:17.958" level="INFO">Typing text 'Smith' into text field 'xpath=//*[@name='surname']'.</msg>
+<status status="PASS" starttime="20230726 14:24:17.958" endtime="20230726 14:24:18.091"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:55.689" endtime="20230726 14:05:55.826"/>
+<status status="PASS" starttime="20230726 14:24:17.958" endtime="20230726 14:24:18.091"/>
 </kw>
 <kw name="Type in Player Phone">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PHONE}</arg>
 <arg>+48 500 600 700</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:55.826" level="INFO">Typing text '+48 500 600 700' into text field 'xpath=//*[@name='phone']'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.826" endtime="20230726 14:05:55.982"/>
+<msg timestamp="20230726 14:24:18.091" level="INFO">Typing text '+48 500 600 700' into text field 'xpath=//*[@name='phone']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.091" endtime="20230726 14:24:18.260"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:55.826" endtime="20230726 14:05:55.982"/>
+<status status="PASS" starttime="20230726 14:24:18.091" endtime="20230726 14:24:18.260"/>
 </kw>
 <kw name="Type in Player Weight">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${WEIGHT}</arg>
 <arg>70</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:55.982" level="INFO">Typing text '70' into text field 'xpath=//*[@name='weight']'.</msg>
-<status status="PASS" starttime="20230726 14:05:55.982" endtime="20230726 14:05:56.088"/>
+<msg timestamp="20230726 14:24:18.260" level="INFO">Typing text '70' into text field 'xpath=//*[@name='weight']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.260" endtime="20230726 14:24:18.374"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:55.982" endtime="20230726 14:05:56.088"/>
+<status status="PASS" starttime="20230726 14:24:18.260" endtime="20230726 14:24:18.374"/>
 </kw>
 <kw name="Type in Player Height">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${HEIGHT}</arg>
 <arg>178</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.096" level="INFO">Typing text '178' into text field 'xpath=//*[@name='height']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.088" endtime="20230726 14:05:56.202"/>
+<msg timestamp="20230726 14:24:18.374" level="INFO">Typing text '178' into text field 'xpath=//*[@name='height']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.374" endtime="20230726 14:24:18.494"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:56.088" endtime="20230726 14:05:56.202"/>
+<status status="PASS" starttime="20230726 14:24:18.374" endtime="20230726 14:24:18.494"/>
 </kw>
 <kw name="Type in Player Age">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PLAYERAGE}</arg>
 <arg>22.04.2000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.202" level="INFO">Typing text '22.04.2000' into text field 'xpath=//*[@name='age']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.202" endtime="20230726 14:05:56.308"/>
+<msg timestamp="20230726 14:24:18.494" level="INFO">Typing text '22.04.2000' into text field 'xpath=//*[@name='age']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.494" endtime="20230726 14:24:18.607"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:56.202" endtime="20230726 14:05:56.308"/>
+<status status="PASS" starttime="20230726 14:24:18.494" endtime="20230726 14:24:18.615"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LEGSELECT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.308" level="INFO">Clicking element 'xpath=//*[@id='mui-component-select-leg']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.308" endtime="20230726 14:05:56.396"/>
+<msg timestamp="20230726 14:24:18.615" level="INFO">Clicking element 'xpath=//*[@id='mui-component-select-leg']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.615" endtime="20230726 14:24:18.697"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${RIGHTLEG}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:05:56.396" endtime="20230726 14:05:56.436"/>
+<status status="PASS" starttime="20230726 14:24:18.697" endtime="20230726 14:24:18.727"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${RIGHTLEG}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.436" level="INFO">Clicking element 'xpath=//ul[@role='listbox']/li[1]'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.436" endtime="20230726 14:05:56.518"/>
+<msg timestamp="20230726 14:24:18.727" level="INFO">Clicking element 'xpath=//ul[@role='listbox']/li[1]'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.727" endtime="20230726 14:24:18.797"/>
 </kw>
 <kw name="Type in Club Name">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${CLUBNAME}</arg>
 <arg>Nebraska</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.518" level="INFO">Typing text 'Nebraska' into text field 'xpath=//*[@name='club']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.518" endtime="20230726 14:05:56.646"/>
+<msg timestamp="20230726 14:24:18.799" level="INFO">Typing text 'Nebraska' into text field 'xpath=//*[@name='club']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.797" endtime="20230726 14:24:18.944"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:56.518" endtime="20230726 14:05:56.646"/>
+<status status="PASS" starttime="20230726 14:24:18.797" endtime="20230726 14:24:18.944"/>
 </kw>
 <kw name="Type in Player Level">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PLAYERLEVEL}</arg>
 <arg>Junior</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.646" level="INFO">Typing text 'Junior' into text field 'xpath=//*[@name='level']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.646" endtime="20230726 14:05:56.784"/>
+<msg timestamp="20230726 14:24:18.944" level="INFO">Typing text 'Junior' into text field 'xpath=//*[@name='level']'.</msg>
+<status status="PASS" starttime="20230726 14:24:18.944" endtime="20230726 14:24:19.080"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:56.646" endtime="20230726 14:05:56.784"/>
+<status status="PASS" starttime="20230726 14:24:18.944" endtime="20230726 14:24:19.080"/>
 </kw>
 <kw name="Type in Player Main Position">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${MAINPOSITION}</arg>
 <arg>Striker</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.784" level="INFO">Typing text 'Striker' into text field 'xpath=//*[@name='mainPosition']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.784" endtime="20230726 14:05:56.922"/>
+<msg timestamp="20230726 14:24:19.080" level="INFO">Typing text 'Striker' into text field 'xpath=//*[@name='mainPosition']'.</msg>
+<status status="PASS" starttime="20230726 14:24:19.080" endtime="20230726 14:24:19.218"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:56.784" endtime="20230726 14:05:56.922"/>
+<status status="PASS" starttime="20230726 14:24:19.080" endtime="20230726 14:24:19.218"/>
 </kw>
 <kw name="Type in Player Second Position">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${SECONDPOSITION}</arg>
 <arg>Goalkeeper</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:56.922" level="INFO">Typing text 'Goalkeeper' into text field 'xpath=//*[@name='secondPosition']'.</msg>
-<status status="PASS" starttime="20230726 14:05:56.922" endtime="20230726 14:05:57.075"/>
+<msg timestamp="20230726 14:24:19.218" level="INFO">Typing text 'Goalkeeper' into text field 'xpath=//*[@name='secondPosition']'.</msg>
+<status status="PASS" starttime="20230726 14:24:19.218" endtime="20230726 14:24:19.362"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:56.922" endtime="20230726 14:05:57.075"/>
+<status status="PASS" starttime="20230726 14:24:19.218" endtime="20230726 14:24:19.362"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${DISTRICTSELECT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:57.075" level="INFO">Clicking element 'xpath=//*[@id='mui-component-select-district']'.</msg>
-<status status="PASS" starttime="20230726 14:05:57.075" endtime="20230726 14:05:57.180"/>
+<msg timestamp="20230726 14:24:19.362" level="INFO">Clicking element 'xpath=//*[@id='mui-component-select-district']'.</msg>
+<status status="PASS" starttime="20230726 14:24:19.362" endtime="20230726 14:24:19.435"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${DISTRICTSILESIA}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20230726 14:05:57.180" endtime="20230726 14:05:57.475"/>
+<status status="PASS" starttime="20230726 14:24:19.435" endtime="20230726 14:24:19.731"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${DISTRICTSILESIA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:57.475" level="INFO">Clicking element 'xpath=//li[@data-value='slaskie']'.</msg>
-<status status="PASS" starttime="20230726 14:05:57.475" endtime="20230726 14:05:57.544"/>
+<msg timestamp="20230726 14:24:19.731" level="INFO">Clicking element 'xpath=//li[@data-value='slaskie']'.</msg>
+<status status="PASS" starttime="20230726 14:24:19.731" endtime="20230726 14:24:19.795"/>
 </kw>
 <kw name="Type in Achievement">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${ACHIEVEMENT}</arg>
 <arg>None</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:57.547" level="INFO">Typing text 'None' into text field 'xpath=//*[@name='achievements']'.</msg>
-<status status="PASS" starttime="20230726 14:05:57.544" endtime="20230726 14:05:57.667"/>
+<msg timestamp="20230726 14:24:19.797" level="INFO">Typing text 'None' into text field 'xpath=//*[@name='achievements']'.</msg>
+<status status="PASS" starttime="20230726 14:24:19.797" endtime="20230726 14:24:19.923"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:57.544" endtime="20230726 14:05:57.667"/>
+<status status="PASS" starttime="20230726 14:24:19.797" endtime="20230726 14:24:19.923"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LANGUAGEBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:57.667" level="INFO">Clicking element 'xpath=//main/div[2]/form/div[2]/div[1]/div[15]/button/span[1]'.</msg>
-<status status="PASS" starttime="20230726 14:05:57.667" endtime="20230726 14:05:57.947"/>
+<msg timestamp="20230726 14:24:19.923" level="INFO">Clicking element 'xpath=//main/div[2]/form/div[2]/div[1]/div[15]/button/span[1]'.</msg>
+<status status="PASS" starttime="20230726 14:24:19.923" endtime="20230726 14:24:20.198"/>
 </kw>
 <kw name="Type in Language">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LANGUAGEINPUT}</arg>
 <arg>English</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:57.947" level="INFO">Typing text 'English' into text field 'xpath=//*[@name='languages[0]']'.</msg>
-<status status="PASS" starttime="20230726 14:05:57.947" endtime="20230726 14:05:58.091"/>
+<msg timestamp="20230726 14:24:20.198" level="INFO">Typing text 'English' into text field 'xpath=//*[@name='languages[0]']'.</msg>
+<status status="PASS" starttime="20230726 14:24:20.198" endtime="20230726 14:24:20.350"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:57.947" endtime="20230726 14:05:58.091"/>
+<status status="PASS" starttime="20230726 14:24:20.198" endtime="20230726 14:24:20.350"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${YOUTUBEBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:58.091" level="INFO">Clicking element 'xpath=//*[contains(@class, 'MuiGrid-root')]/div[19]/button/span[1]'.</msg>
-<status status="PASS" starttime="20230726 14:05:58.091" endtime="20230726 14:05:58.163"/>
+<msg timestamp="20230726 14:24:20.350" level="INFO">Clicking element 'xpath=//*[contains(@class, 'MuiGrid-root')]/div[19]/button/span[1]'.</msg>
+<status status="PASS" starttime="20230726 14:24:20.350" endtime="20230726 14:24:20.422"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${YOUTUBEINPUT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:58.171" level="INFO">Clicking element 'xpath=//*[@name='webYT[0]']'.</msg>
-<status status="PASS" starttime="20230726 14:05:58.171" endtime="20230726 14:05:58.251"/>
+<msg timestamp="20230726 14:24:20.422" level="INFO">Clicking element 'xpath=//*[@name='webYT[0]']'.</msg>
+<status status="PASS" starttime="20230726 14:24:20.422" endtime="20230726 14:24:20.502"/>
 </kw>
 <kw name="Type in YouTube Link">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${YOUTUBEINPUT}</arg>
 <arg>www.youtube.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:58.259" level="INFO">Typing text 'www.youtube.com' into text field 'xpath=//*[@name='webYT[0]']'.</msg>
-<status status="PASS" starttime="20230726 14:05:58.251" endtime="20230726 14:05:58.403"/>
+<msg timestamp="20230726 14:24:20.502" level="INFO">Typing text 'www.youtube.com' into text field 'xpath=//*[@name='webYT[0]']'.</msg>
+<status status="PASS" starttime="20230726 14:24:20.502" endtime="20230726 14:24:20.655"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:58.251" endtime="20230726 14:05:58.403"/>
+<status status="PASS" starttime="20230726 14:24:20.502" endtime="20230726 14:24:20.655"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SUBMITBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:05:58.403" level="INFO">Clicking element 'xpath=//*[@type='submit']/span[1]'.</msg>
-<status status="PASS" starttime="20230726 14:05:58.403" endtime="20230726 14:05:58.499"/>
+<msg timestamp="20230726 14:24:20.655" level="INFO">Clicking element 'xpath=//*[@type='submit']/span[1]'.</msg>
+<status status="PASS" starttime="20230726 14:24:20.655" endtime="20230726 14:24:20.752"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:05:58.499" endtime="20230726 14:06:00.671"/>
+<status status="PASS" starttime="20230726 14:24:20.752" endtime="20230726 14:24:22.908"/>
 </kw>
-<status status="PASS" starttime="20230726 14:05:51.389" endtime="20230726 14:06:00.671"/>
+<status status="PASS" starttime="20230726 14:24:12.122" endtime="20230726 14:24:22.908"/>
 </test>
-<test id="s1-t5" name="Change language" line="101">
+<test id="s1-t6" name="Change language" line="109">
 <kw name="Open login page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 14:06:00.671" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
-<status status="PASS" starttime="20230726 14:06:00.671" endtime="20230726 14:06:02.452"/>
+<msg timestamp="20230726 14:24:22.908" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230726 14:24:22.908" endtime="20230726 14:24:25.272"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel - sign in</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:06:02.453" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
-<status status="PASS" starttime="20230726 14:06:02.452" endtime="20230726 14:06:02.460"/>
+<msg timestamp="20230726 14:24:25.280" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20230726 14:24:25.280" endtime="20230726 14:24:25.280"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:00.671" endtime="20230726 14:06:02.460"/>
+<status status="PASS" starttime="20230726 14:24:22.908" endtime="20230726 14:24:25.280"/>
 </kw>
 <kw name="Type in email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILINPUT}</arg>
 <arg>user10@getnada.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:06:02.460" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
-<status status="PASS" starttime="20230726 14:06:02.460" endtime="20230726 14:06:02.803"/>
+<msg timestamp="20230726 14:24:25.288" level="INFO">Typing text 'user10@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230726 14:24:25.288" endtime="20230726 14:24:25.491"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:02.460" endtime="20230726 14:06:02.803"/>
+<status status="PASS" starttime="20230726 14:24:25.280" endtime="20230726 14:24:25.491"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDINPUT}</arg>
 <arg>Test-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230726 14:06:02.805" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
-<status status="PASS" starttime="20230726 14:06:02.804" endtime="20230726 14:06:02.970"/>
+<msg timestamp="20230726 14:24:25.491" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230726 14:24:25.491" endtime="20230726 14:24:25.619"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:02.803" endtime="20230726 14:06:02.970"/>
+<status status="PASS" starttime="20230726 14:24:25.491" endtime="20230726 14:24:25.619"/>
 </kw>
 <kw name="Click on the Submit button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:06:02.979" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
-<status status="PASS" starttime="20230726 14:06:02.979" endtime="20230726 14:06:03.036"/>
+<msg timestamp="20230726 14:24:25.619" level="INFO">Clicking element 'xpath=//*[(text()= 'Sign in')]'.</msg>
+<status status="PASS" starttime="20230726 14:24:25.619" endtime="20230726 14:24:25.683"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:02.979" endtime="20230726 14:06:03.036"/>
+<status status="PASS" starttime="20230726 14:24:25.619" endtime="20230726 14:24:25.683"/>
 </kw>
 <kw name="Assert dashboard">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGELOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230726 14:06:03.036" endtime="20230726 14:06:04.349"/>
+<status status="PASS" starttime="20230726 14:24:25.683" endtime="20230726 14:24:29.090"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230726 14:06:04.357" level="INFO">Page title is 'Scouts panel'.</msg>
-<status status="PASS" starttime="20230726 14:06:04.349" endtime="20230726 14:06:04.357"/>
+<msg timestamp="20230726 14:24:29.098" level="INFO">Page title is 'Scouts panel'.</msg>
+<status status="PASS" starttime="20230726 14:24:29.090" endtime="20230726 14:24:29.098"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230726 14:06:04.493" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230726 14:06:04.357" endtime="20230726 14:06:04.493"/>
+<msg timestamp="20230726 14:24:29.258" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230726 14:24:29.098" endtime="20230726 14:24:29.258"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:03.036" endtime="20230726 14:06:04.493"/>
+<status status="PASS" starttime="20230726 14:24:25.683" endtime="20230726 14:24:29.258"/>
 </kw>
 <kw name="Click Language Button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CHANGELANGUAGE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230726 14:06:04.493" level="INFO">Clicking element 'xpath=//div[@role='presentation']/ul[2]/div[1]/div[2]/span[1]'.</msg>
-<status status="PASS" starttime="20230726 14:06:04.493" endtime="20230726 14:06:04.573"/>
+<msg timestamp="20230726 14:24:29.258" level="INFO">Clicking element 'xpath=//div[@role='presentation']/ul[2]/div[1]/div[2]/span[1]'.</msg>
+<status status="PASS" starttime="20230726 14:24:29.258" endtime="20230726 14:24:29.348"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:04.493" endtime="20230726 14:06:04.573"/>
+<status status="PASS" starttime="20230726 14:24:29.258" endtime="20230726 14:24:29.348"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230726 14:06:04.573" endtime="20230726 14:06:06.715"/>
+<status status="PASS" starttime="20230726 14:24:29.348" endtime="20230726 14:24:31.505"/>
 </kw>
-<status status="PASS" starttime="20230726 14:06:00.671" endtime="20230726 14:06:06.715"/>
+<status status="PASS" starttime="20230726 14:24:22.908" endtime="20230726 14:24:31.505"/>
 </test>
 <doc>Suite description #automated testes for scout website</doc>
-<status status="PASS" starttime="20230726 14:05:28.894" endtime="20230726 14:06:06.715"/>
+<status status="PASS" starttime="20230726 14:23:46.269" endtime="20230726 14:24:31.505"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Test Login Rf">Test Login Rf</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="Test Login Rf">Test Login Rf</stat>
 </suite>
 </statistics>
 <errors>

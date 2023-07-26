@@ -34,7 +34,7 @@ ${YOUTUBEBUTTON}        xpath=//*[contains(@class, 'MuiGrid-root')]/div[19]/butt
 ${YOUTUBEINPUT}     xpath=//*[@name='webYT[0]']
 ${SUBMITBUTTON}     xpath=//*[@type='submit']/span[1]
 ${CHANGELANGUAGE}       xpath=//div[@role='presentation']/ul[2]/div[1]/div[2]/span[1]
-
+${ACTUALINFO}       xpath=//div[@id="__next"]/form/div/div/div[3]/span[1]
 
 *** Test Cases ***
 Login to the system
@@ -52,6 +52,14 @@ Log out of the system
     Click On The Submit Button
     Assert Dashboard
     Click On The Logout Button
+    [Teardown]    Close Browser
+
+Login to the system with invalid data
+    Open login page
+    Type in invalid email
+    Type in password
+    Click on the Submit button
+
     [Teardown]    Close Browser
 
 Add player page
@@ -116,6 +124,8 @@ Open login page
     Title Should Be     Scouts panel - sign in
 Type in email
     Input Text      ${EMAILINPUT}     user10@getnada.com
+Type in invalid email
+    Input Text    ${EMAILINPUT}     user10@getnada.co
 Type in password
     Input Text      ${PASSWORDINPUT}    Test-1234
 Click on the Submit button
@@ -162,6 +172,10 @@ Assert dashboard
 Assert player page
     Wait Until Element Is Visible    ${ADDPLAYERPAGELOGO}
     Title Should Be     Add player
+    Capture Page Screenshot    alert.png
+Asser actual info
+    Wait Until Element Is Visible   ${ACTUALINFO}
+    Title Should Be    Identifier or password invalid.
     Capture Page Screenshot    alert.png
 
 

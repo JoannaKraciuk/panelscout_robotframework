@@ -62,6 +62,12 @@ Login to the system with invalid data
     Asser Actual Info
     [Teardown]    Close Browser
 
+Login to the system without data
+    Open login page
+    Click on the Submit button
+    Assert Actual Info Login Without Data
+    [Teardown]    Close Browser
+
 Add player page
     Open Login Page
     Type In Email
@@ -173,6 +179,10 @@ Assert player page
 Asser actual info
     Wait Until Element Is Visible   ${ACTUALINFO}
     Element Text Should Be      ${ACTUALINFO}       Identifier or password invalid.
+    Capture Page Screenshot    alert.png
+Assert actual info login without data
+    Wait Until Element Is Visible    ${ACTUALINFO}
+    Element Text Should Be    ${ACTUALINFO}     Please provide your username or your e-mail.
     Capture Page Screenshot    alert.png
 
 

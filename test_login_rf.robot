@@ -8,8 +8,8 @@ ${BROWSER}          Chrome
 ${SIGNINBUTTON}        xpath=//*[(text()= 'Sign in')]
 ${EMAILINPUT}       xpath=//*[@id='login']
 ${PASSWORDINPUT}        xpath=//*[@id='password']
-${PAGELOGO}     xpath=//div[@class='MuiCardContent-root']/div[3]/span
-
+${PAGELOGO}     xpath=//*[@id="__next"]/div[1]/main/div[3]/div[1]/div/div[1]
+${LOGOUTBUTTON}     //div[@role='presentation']/ul[2]/div[2]/div[2]/span[1]
 
 *** Test Cases ***
 Login to the system
@@ -20,20 +20,31 @@ Login to the system
     Assert dashboard
     [Teardown]    Close Browser
 
+Log out of the system
+    Open Login Page
+    Type In Email
+    Type In Password
+    Click On The Submit Button
+    Assert Dashboard
+    Click On The Logout Button
+    [Teardown]    Close Browser
+
 
 *** Keywords ***
 Open login page
     Open Browser    ${LOGIN URL}    ${BROWSER}
     Title Should Be     Scouts panel - sign in
 Type in email
-    Input Text      ${EMAILINPUT}     user07@getnada.com
+    Input Text      ${EMAILINPUT}     user10@getnada.com
 Type in password
-    Input Text      ${PASSWORDINPUT}      Tester-1234
+    Input Text      ${PASSWORDINPUT}    Test-1234
 Click on the Submit button
-    Click Element       xpath=//*[(text()= 'Sign in')]
+    Click Element       ${SIGNINBUTTON}
+Click on the Logout Button
+    Click Element       ${LOGOUTBUTTON}
 Assert dashboard
     Wait Until Element Is Visible       ${PAGELOGO}
-    Title Should Be     Scouts panel - sign in
+    Title Should Be     Scouts panel
     Capture Page Screenshot     alert.png
 
 

@@ -59,7 +59,7 @@ Login to the system with invalid data
     Type in invalid email
     Type in password
     Click on the Submit button
-
+    Asser Actual Info
     [Teardown]    Close Browser
 
 Add player page
@@ -114,9 +114,6 @@ Change language
     Assert Dashboard
     Click Language Button
     [Teardown]    Close Browser
-
-
-
 
 *** Keywords ***
 Open login page
@@ -175,7 +172,7 @@ Assert player page
     Capture Page Screenshot    alert.png
 Asser actual info
     Wait Until Element Is Visible   ${ACTUALINFO}
-    Title Should Be    Identifier or password invalid.
+    Element Text Should Be      ${ACTUALINFO}       Identifier or password invalid.
     Capture Page Screenshot    alert.png
 
 

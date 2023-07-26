@@ -33,6 +33,7 @@ ${LANGUAGEINPUT}        xpath=//*[@name='languages[0]']
 ${YOUTUBEBUTTON}        xpath=//*[contains(@class, 'MuiGrid-root')]/div[19]/button/span[1]
 ${YOUTUBEINPUT}     xpath=//*[@name='webYT[0]']
 ${SUBMITBUTTON}     xpath=//*[@type='submit']/span[1]
+${CHANGELANGUAGE}       xpath=//div[@role='presentation']/ul[2]/div[1]/div[2]/span[1]
 
 
 *** Test Cases ***
@@ -81,12 +82,12 @@ Add player form
     Click Element       ${LEGSELECT}
     Wait Until Element Is Visible    ${RIGHTLEG}
     Click Element    ${RIGHTLEG}
-    Type Club Name
-    Type Player Level
-    Type Player Main Position
-    Type Player Second Position
+    Type in Club Name
+    Type in Player Level
+    Type in Player Main Position
+    Type in Player Second Position
     Click Element       ${DISTRICTSELECT}
-    Wait Until Element Is Visible    ${DISTRICTSILESIA}
+    Scroll Element Into View        ${DISTRICTSILESIA}
     Click Element       ${DISTRICTSILESIA}
     Type in Achievement
     Click Element       ${LANGUAGEBUTTON}
@@ -95,6 +96,15 @@ Add player form
     Click Element       ${YOUTUBEINPUT}
     Type in YouTube Link
     Click Element       ${SUBMITBUTTON}
+    [Teardown]    Close Browser
+
+Change language
+    Open Login Page
+    Type In Email
+    Type In Password
+    Click On The Submit Button
+    Assert Dashboard
+    Click Language Button
     [Teardown]    Close Browser
 
 
@@ -126,13 +136,13 @@ Type in Player Height
     Input Text    ${HEIGHT}     178
 Type in Player Age
     Input Text    ${PLAYERAGE}      22.04.2000
-Type Club Name
+Type in Club Name
     Input Text    ${CLUBNAME}       Nebraska
-Type Player Level
+Type in Player Level
     Input Text    ${PLAYERLEVEL}    Junior
-Type Player Main Position
+Type in Player Main Position
     Input Text    ${MAINPOSITION}   Striker
-Type Player Second Position
+Type in Player Second Position
     Input Text    ${SECONDPOSITION}     Goalkeeper
 Type in Achievement
     Input Text    ${ACHIEVEMENT}        None
@@ -140,6 +150,8 @@ Type in Language
     Input Text    ${LANGUAGEINPUT}      English
 Type in YouTube Link
     Input Text    ${YOUTUBEINPUT}       www.youtube.com
+Click Language Button
+    Click Element    ${CHANGELANGUAGE}
 
 
 

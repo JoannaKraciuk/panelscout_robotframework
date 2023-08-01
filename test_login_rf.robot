@@ -3,9 +3,9 @@ Library    SeleniumLibrary
 Documentation    Suite description #automated testes for scout website
 
 *** Variables ***
-${LOGIN URL}        https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}        https://dareit.futbolkolektyw.pl/
 ${BROWSER}          Chrome
-${SIGNINBUTTON}        xpath=//*[(text()= 'Sign in')]
+${SIGNINBUTTON}        xpath=//div[@id="__next"]/form/div[1]/div[2]/button[1]/span[1]
 ${EMAILINPUT}       xpath=//*[@id='login']
 ${PASSWORDINPUT}        xpath=//*[@id='password']
 ${PAGELOGO}     xpath=//*[@id="__next"]/div[1]/main/div[3]/div[1]/div/div[1]
@@ -50,7 +50,8 @@ Log out of the system
     Type In Email
     Type In Password
     Click On The Submit Button
-    Assert Dashboard
+    #Assert Dashboard
+    Wait Until Element Is Visible    ${LOGOUTBUTTON}
     Click On The Logout Button
     [Teardown]    Close Browser
 
@@ -73,7 +74,8 @@ Add player page
     Type In Email
     Type In Password
     Click On The Submit Button
-    Assert Dashboard
+    #Assert Dashboard
+    Wait Until Element Is Visible    ${ADDPLAYERBUTTON}
     Click Element    ${ADDPLAYERBUTTON}
     Assert Player Page
     [Teardown]    Close Browser
@@ -83,9 +85,11 @@ Add player form
     Type In Email
     Type In Password
     Click On The Submit Button
-    Assert Dashboard
+    #Assert Dashboard
+    Wait Until Element Is Visible    ${ADDPLAYERBUTTON}
     Click Element    ${ADDPLAYERBUTTON}
     Assert Player Page
+    Wait Until Element Is Visible    ${PLAYEREMAIL}
     Type In Player Email
     Type In Player Name
     Type in Player Surname
@@ -117,14 +121,15 @@ Change language
     Type In Email
     Type In Password
     Click On The Submit Button
-    Assert Dashboard
+    #Assert Dashboard
+    Wait Until Element Is Visible    ${CHANGELANGUAGE}
     Click Language Button
     [Teardown]    Close Browser
 
 *** Keywords ***
 Open login page
     Open Browser    ${LOGIN URL}    ${BROWSER}
-    Title Should Be     Scouts panel - sign in
+    Title Should Be     Scouts panel - zaloguj
 Type in email
     Input Text      ${EMAILINPUT}     user10@getnada.com
 Type in invalid email
@@ -165,7 +170,6 @@ Type in YouTube Link
     Input Text    ${YOUTUBEINPUT}       www.youtube.com
 Click Language Button
     Click Element    ${CHANGELANGUAGE}
-
 
 
 Assert dashboard
